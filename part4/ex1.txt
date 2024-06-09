@@ -1,0 +1,15 @@
+Eulerian Path
+An Eulerian path in a graph is a trail that visits every edge exactly once. For a graph to have an Eulerian path:
+- If the graph is directed, it must have exactly one vertex with in-degree \( \text{outdegree} - 1 \), one vertex with out-degree \( \text{indegree} - 1 \), and all other vertices must have equal in-degree and out-degree.
+- If the graph is undirected, it must have exactly zero or two vertices of odd degree.
+
+Hamiltonian Path
+A Hamiltonian path in a graph is a path that visits every vertex exactly once. Unlike Eulerian paths, there is no simple necessary and sufficient condition to determine the existence of Hamiltonian paths. However, certain conditions (like Dirac's or Ore's theorem) provide sufficient (but not necessary) conditions for the existence of Hamiltonian paths.
+
+Connection via Line Graphs
+A line graph \(L(G)\) of a graph \(G\) is a graph where each vertex of \(L(G)\) represents an edge of \(G\). Two vertices in \(L(G)\) are adjacent if and only if their corresponding edges in \(G\) share a common vertex. 
+
+The connection between Eulerian and Hamiltonian paths lies in the properties of the line graph:
+- If \(G\) has an Eulerian path, then \(L(G)\) has a Hamiltonian path.
+- If \(G\) has an Eulerian circuit (which is an Eulerian path that starts and ends at the same vertex), then \(L(G)\) has a Hamiltonian cycle.
+
