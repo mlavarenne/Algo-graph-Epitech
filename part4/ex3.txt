@@ -1,4 +1,5 @@
-### 3. Algorithmic Complexity: Eulerian vs. Hamiltonian
+ENGLISH:
+Algorithmic Complexity: Eulerian vs. Hamiltonian
 
 From an algorithmic point of view, determining the existence of an Eulerian path is significantly easier than finding a Hamiltonian path:
 - **Eulerian Path**: The problem can be solved in linear time O(V+E) by checking the degrees of vertices (for undirected graphs) or in-degrees and out-degrees (for directed graphs). NetworkX provides built-in functions to check this efficiently.
@@ -7,3 +8,13 @@ From an algorithmic point of view, determining the existence of an Eulerian path
 Therefore, the Hamiltonian path problem is considered "harder" from an algorithmic perspective due to its computational complexity.
 
 In summary, while both Eulerian and Hamiltonian paths are fundamental concepts in graph theory, their computational complexities and the ease of determining their existence differ significantly, with the Hamiltonian path problem being much more challenging to solve in general cases.
+
+FRENCH:
+Complexité Algorithmique : Eulerien vs. Hamiltonien
+
+D'un point de vue algorithmique, déterminer l'existence d'un chemin eulérien est significativement plus facile que de trouver un chemin hamiltonien :
+- **Chemin Eulerien**: Le problème peut être résolu en temps linéaire O(V+E) en vérifiant les degrés des sommets (pour les graphes non orientés) ou les degrés entrants et sortants (pour les graphes orientés). NetworkX fournit des fonctions intégrées pour vérifier cela efficacement.
+Chemin Hamiltonien : Le problème est NP-complet, ce qui signifie qu'il n'existe pas d'algorithme en temps polynomial connu pour le résoudre pour tous les graphes. Trouver un chemin hamiltonien nécessite d'explorer un nombre exponentiel de séquences de sommets dans le pire des cas.
+Par conséquent, le problème du chemin hamiltonien est considéré comme "plus difficile" d'un point de vue algorithmique en raison de sa complexité computationnelle.
+
+En résumé, bien que les chemins eulériens et hamiltoniens soient des concepts fondamentaux en théorie des graphes, leurs complexités computationnelles et la facilité de déterminer leur existence diffèrent significativement, avec le problème du chemin hamiltonien étant beaucoup plus difficile à résoudre dans les cas généraux.
