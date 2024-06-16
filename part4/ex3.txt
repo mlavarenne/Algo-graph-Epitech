@@ -1,7 +1,7 @@
 ### 3. Algorithmic Complexity: Eulerian vs. Hamiltonian
 
 From an algorithmic point of view, determining the existence of an Eulerian path is significantly easier than finding a Hamiltonian path:
-- **Eulerian Path**: The problem can be solved in linear time \(O(V + E)\) by checking the degrees of vertices (for undirected graphs) or in-degrees and out-degrees (for directed graphs). NetworkX provides built-in functions to check this efficiently.
+- **Eulerian Path**: The problem can be solved in linear time O(V+E) by checking the degrees of vertices (for undirected graphs) or in-degrees and out-degrees (for directed graphs). NetworkX provides built-in functions to check this efficiently.
 - **Hamiltonian Path**: The problem is NP-complete, meaning that there is no known polynomial-time algorithm to solve it for all graphs. Finding a Hamiltonian path requires exploring an exponential number of possible vertex sequences in the worst case.
 
 Therefore, the Hamiltonian path problem is considered "harder" from an algorithmic perspective due to its computational complexity.
