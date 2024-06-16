@@ -1,15 +1,33 @@
+ENGLISH:
 Eulerian Path
 An Eulerian path in a graph is a trail that visits every edge exactly once. For a graph to have an Eulerian path:
-- If the graph is directed, it must have exactly one vertex with in-degree \( \text{outdegree} - 1 \), one vertex with out-degree \( \text{indegree} - 1 \), and all other vertices must have equal in-degree and out-degree.
+- If the graph is directed, it must have exactly one vertex with in-degree outdegree - 1, one vertex with out-degree indegree - 1, and all other vertices must have equal in-degree and out-degree.
 - If the graph is undirected, it must have exactly zero or two vertices of odd degree.
 
 Hamiltonian Path
 A Hamiltonian path in a graph is a path that visits every vertex exactly once. Unlike Eulerian paths, there is no simple necessary and sufficient condition to determine the existence of Hamiltonian paths. However, certain conditions (like Dirac's or Ore's theorem) provide sufficient (but not necessary) conditions for the existence of Hamiltonian paths.
 
 Connection via Line Graphs
-A line graph \(L(G)\) of a graph \(G\) is a graph where each vertex of \(L(G)\) represents an edge of \(G\). Two vertices in \(L(G)\) are adjacent if and only if their corresponding edges in \(G\) share a common vertex. 
+A line graph L(G) of a graph G is a graph where each vertex of L(G) represents an edge of G. Two vertices in L(G) are adjacent if and only if their corresponding edges in G share a common vertex. 
 
 The connection between Eulerian and Hamiltonian paths lies in the properties of the line graph:
-- If \(G\) has an Eulerian path, then \(L(G)\) has a Hamiltonian path.
-- If \(G\) has an Eulerian circuit (which is an Eulerian path that starts and ends at the same vertex), then \(L(G)\) has a Hamiltonian cycle.
+- If G has an Eulerian path, then L(G) has a Hamiltonian path.
+- If G has an Eulerian circuit (which is an Eulerian path that starts and ends at the same vertex), then L(G) has a Hamiltonian cycle.
 
+FRENCH:
+Chemin Eulerien
+Un chemin eulérien dans un graphe est un parcours qui visite chaque arête exactement une fois. Pour qu'un graphe ait un chemin eulérien :
+
+- Si le graphe est orienté, il doit avoir exactement un sommet dont le degré entrant est égal au degré sortant moins un (degré entrant = degré sortant - 1), un sommet dont le degré sortant est égal au degré entrant moins un (degré sortant = degré entrant - 1), et tous les autres sommets doivent avoir des degrés entrants et sortants égaux.
+- Si le graphe est non orienté, il doit avoir exactement zéro ou deux sommets de degré impair.
+
+Chemin Hamiltonien
+Un chemin hamiltonien dans un graphe est un chemin qui visite chaque sommet exactement une fois. Contrairement aux chemins eulériens, il n'existe pas de condition simple, nécessaire et suffisante pour déterminer l'existence de chemins hamiltoniens. Cependant, certaines conditions (comme les théorèmes de Dirac ou d'Ore) fournissent des conditions suffisantes (mais non nécessaires) pour l'existence de chemins hamiltoniens.
+
+Connexion via les Graphes Adjoints
+Un graphe adjoint L(G) d'un graphe G est un graphe où chaque sommet de L(G) représente une arête de G. Deux sommets dans L(G) sont adjacents si et seulement si leurs arêtes correspondantes dans G partagent un sommet commun.
+
+La connexion entre les chemins eulériens et hamiltoniens réside dans les propriétés du graphe adjoint :
+
+- Si G a un chemin eulérien, alors L(G) a un chemin hamiltonien.
+- Si G a un circuit eulérien (qui est un chemin eulérien commençant et terminant au même sommet), alors L(G) a un cycle hamiltonien.
